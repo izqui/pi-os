@@ -1,0 +1,6 @@
+build
+kernel.img
+kernel.list
+kernel.map
+*.o
+*.a
