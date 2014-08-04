@@ -1,2 +1,5 @@
 #!/bin/sh
-sudo cp kernel.img /Volumes/boot/kernel.img
+diskutil mount boot
+make
+cp kernel.img /Volumes/boot/kernel.img
+diskutil unmountDisk boot
