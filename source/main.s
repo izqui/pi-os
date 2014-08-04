@@ -6,12 +6,12 @@ ldr r0,=0x20200000 // Set a pointer to the address in memory which handles GPIO 
 
 // Enabling output to the 16th GPIO pin 
 mov r1,#1 // Move 1 to register r1
-lsl r1,#18 // Do a left shift logical 18 so 1 turns into 1000000000000000000 
+lsl r1,#21 // Do a left shift logical 18 so 1 turns into 1000000000000000000 
 str r1,[r0,#4] // Store the value of r1 in the address given by r0 
 
 //PIN 16
 mov r1,#1
-lsl r1,#16
+lsl r1,#17
 
 turnon$:
 str r1,[r0,#40] //ON
