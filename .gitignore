@@ -1,4 +1,5 @@
 build
+qemu
 kernel.img
 kernel.list
 kernel.map
