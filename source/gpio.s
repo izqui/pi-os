@@ -1,8 +1,8 @@
 .globl GetGPIOAddress
 GetGPIOAddress:
-push {lr}
-ldr r0,=0x20200000
-pop {pc}
+	push {lr}
+	ldr r0,=0x20200000
+	pop {pc}
 
 .globl SetGPIOFunction
 SetGPIOFunction:
